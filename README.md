@@ -1,5 +1,13 @@
 # 🏗 Scaffold-ETH
 
+# 🚨🚨 This repository has been archived and is now read-only 🚨🚨
+
+You are still welcome to fork and use as a template but no more changes will be made to this repository.
+
+## 🎖 Scaffold-ETH 2 is the latest version, we recommend you fork: https://github.com/scaffold-eth/scaffold-eth-2
+
+---
+
 > everything you need to build on Ethereum! 🚀
 
 🧪 Quickly experiment with Solidity using a frontend that adapts to your smart contract:
@@ -7,17 +15,20 @@
 ![image](https://user-images.githubusercontent.com/2653167/124158108-c14ca380-da56-11eb-967e-69cde37ca8eb.png)
 
 
+
 # 🏄‍♂️ Quick Start
 
-Prerequisites: [Node (v16 LTS)](https://nodejs.org/en/download/) plus [Yarn (v1.x)](https://classic.yarnpkg.com/en/docs/install/) and [Git](https://git-scm.com/downloads)
+Prerequisites: [Node (v18 LTS)](https://nodejs.org/en/download/) plus [Yarn (v1.x)](https://classic.yarnpkg.com/en/docs/install/) and [Git](https://git-scm.com/downloads)
 
-> clone/fork 🏗 scaffold-eth:
+🚨 If you are using a version < v18 you will need to remove `openssl-legacy-provider` from the `start` script in `package.json`
+
+> 1️⃣ clone/fork 🏗 scaffold-eth:
 
 ```bash
 git clone https://github.com/scaffold-eth/scaffold-eth.git
 ```
 
-> install and start your 👷‍ Hardhat chain:
+> 2️⃣ install and start your 👷‍ Hardhat chain:
 
 ```bash
 cd scaffold-eth
@@ -25,14 +36,18 @@ yarn install
 yarn chain
 ```
 
-> in a second terminal window, start your 📱 frontend:
+> 3️⃣ in a second terminal window, start your 📱 frontend:
+
+🚨 if your contracts are not deployed to localhost, you will need to update the default network in `App.jsx` to match your default network in `hardhat-config.js`.
 
 ```bash
 cd scaffold-eth
 yarn start
 ```
 
-> in a third terminal window, 🛰 deploy your contract:
+> 4️⃣ in a third terminal window, 🛰 deploy your contract:
+
+🚨 if you are not deploying to localhost, you will need to run `yarn generate` first and then fund the deployer account. To view account balances, run `yarn account`. You will also need to update `hardhat-config.js` with the correct default network.
 
 ```bash
 cd scaffold-eth
@@ -47,6 +62,8 @@ yarn deploy
 
 📱 Open http://localhost:3000 to see the app
 
+🚨📡 To deploy to a public domain, use `yarn surge`. You will need to have a surge account and have the surge CLI installed. There is also the option to deploy to IPFS using `yarn ipfs` and `yarn s3` to deploy to an AWS bucket 🪣 There are scripts in the `packages/react-app/src/scripts` folder to help with this.`
+
 # 📚 Documentation
 
 Documentation, tutorials, challenges, and many more resources, visit: [docs.scaffoldeth.io](https://docs.scaffoldeth.io)
@@ -57,6 +74,7 @@ Documentation, tutorials, challenges, and many more resources, visit: [docs.scaf
 - [scaffold-eth-tailwind](https://github.com/stevenpslade/scaffold-eth-tailwind)
 - [scaffold-nextjs](https://github.com/scaffold-eth/scaffold-eth/tree/scaffold-nextjs)
 - [scaffold-chakra](https://github.com/scaffold-eth/scaffold-eth/tree/chakra-ui)
+- [Scaffold-ETH x Buildbear](https://github.com/BuildBearLabs/scaffold-eth)
 - [eth-hooks](https://github.com/scaffold-eth/eth-hooks)
 - [eth-components](https://github.com/scaffold-eth/eth-components)
 - [scaffold-eth-expo](https://github.com/scaffold-eth/scaffold-eth-expo)
@@ -111,7 +129,7 @@ Register as a builder [here](https://speedrunethereum.com) and start on some of 
 
 # 💬 Support Chat
 
-Join the telegram [support chat 💬](https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA) to ask questions and find others building with 🏗 scaffold-eth!
+Join the telegram [support chat 💬](https://t.me/joinchat/KByvmRe5wkR-8F_zz6AjpA) or buidlguidl [discord](https://discord.gg/pRsr6rwG) to ask questions and find others building with 🏗 scaffold-eth!
 
 ---
 
